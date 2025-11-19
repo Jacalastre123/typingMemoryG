@@ -19,7 +19,7 @@ document.addEventListener("input", () => {
          tabsTot = 0
          
          numRep = codeValue.substring(14)
-        for (tabsTot < Number(numRep); tabsTot++) {
+        for (tabsTot < Number(numRep); tabsTot++;) {
             
            
             window.open("https://www.google.com", "_blank")
