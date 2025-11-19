@@ -33,7 +33,7 @@ let alphaList = [
     const scorer = document.getElementById("scorers")
     const highScorer = document.getElementById("highScorers")
     const scoreShow = dial.querySelector("#scoreShow")
-   
+    const codable = document.getElementById("codable")
     let score = 0
 
     let pickerNum;
@@ -47,4 +47,5 @@ let alphaList = [
 let clock = 60
 let speed = 0
 let highScore = localStorage.getItem("highScore") || 0
-  
+let inter;
+let codeValue;
