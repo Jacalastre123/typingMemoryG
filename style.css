@@ -47,5 +47,6 @@ button {
 }
 .logo {
     text-align: center;
-
+    width: 50%;
+    height: 50%;
 }
