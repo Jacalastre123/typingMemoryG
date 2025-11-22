@@ -32,6 +32,7 @@ function generate() {
 }
 
 function play(button) {
+	scoreShow.innerHTML = "Score: " + score
     codable.value = ""
     score = 0
 clock = 60
@@ -60,9 +61,19 @@ button.disabled = true
 
 
 generate()
-
-document.addEventListener("keydown", checks)
+function isMobile(){
+	return /Android|iPhone|Ipad|Ipod|Windows Phone|WebOS/i
+	.test(navigator.userAgent) || window.innerWitdh <= 600
 }
+	if (isMobile()) {
+		document.addEventListener("input", checks)
+	}
+
+	else {
+document.addEventListener("keydown", checks)
+	}
+}
+
     function checks(event) {
     scoreShow.innerHTML = "Score: " + score
     if (event.key === letterCycled) {
