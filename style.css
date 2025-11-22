@@ -3,14 +3,14 @@
 body {
     text-align: center;
     font-family: alan sans;
-    background-color: rgb(20, 90, 180);
+    background-color: rgb(20, 90, 160);
     color: white;
     justify-content: center;
     font-size: 1.5em;
 }
 
 div {
-    background-color: rgba(200,200,200, 0.28);
+    background-color: rgba(190,190,190, 0.25);
     font-family: google sans code;
     border-radius: 5px;
 }
